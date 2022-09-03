@@ -55,6 +55,46 @@
             <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
             <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
         </div>
+
+        <div>
+            <div class="movie">
+                <div class="movie__img">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/regular/large.jpg">
+                        <source media="(min-width: 600px)" srcset="./static/img/thumbnails/beyond-earth/regular/medium.jpg">
+                        <img src="./static/img/thumbnails/beyond-earth/regular/small.jpg" alt="beyond earth">
+                    </picture>
+                    <div class="movie__overlay">
+                        <div class="movie__play">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                            </svg>
+                            Play
+                        </div>
+                    </div>
+                </div>
+                <div class="movie__info">
+                    <div class="movie__meta">
+                        <p class="movie__year">2019</p>
+                        <p class="movie__category movie__separate">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                            </svg>
+                            Movie
+                        </p>
+                        <p class="movie__mark movie__separate">PG</p>
+                    </div>
+
+                    <p class="movie__title">Beyond Earth</p>
+                </div>
+
+                <button class="movie__bookmark">
+                    <svg>
+                        <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 <script src="./static/js/script.min.js"></script>
