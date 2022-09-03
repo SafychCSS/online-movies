@@ -122,8 +122,8 @@ const fonts = () => {
 const imagesDev = () => {
     return src([
         'dev/static/img/**/*.{gif,png,jpg,svg}',
-        '!dev/static/img/icon-png/*.png',
-        '!dev/static/img/svg/*.svg'
+        // '!dev/static/img/icon-png/*.png',
+        // '!dev/static/img/svg/*.svg'
     ])
         .pipe(dest('build/static/img/'));
 }
@@ -131,8 +131,8 @@ const imagesDev = () => {
 const imagesBuild = () => {
     return src([
         'dev/static/img/**/*.{gif,png,jpg,svg}',
-        '!dev/static/img/icon-png/*.png',
-        '!dev/static/img/svg/*.svg'
+        // '!dev/static/img/icon-png/*.png',
+        // '!dev/static/img/svg/*.svg'
     ])
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),

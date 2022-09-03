@@ -7,14 +7,54 @@
     <link rel="stylesheet" type="text/css" href="./static/css/style.min.css">
     <title>Document</title>
     <style>
-
+        .example > div {
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
 <div class="wrapper">
     <div class="example">
-        <button class="btn">Login to your account</button>
-        <a class="btn" href="#">Login to your account</a>
+        <div>
+            <button class="btn">Login to your account</button>
+            <a class="btn" href="#">Login to your account</a>
+        </div>
+
+        <div>
+            <div class="input">
+                <input class="input__text" type="text" placeholder="Email address">
+                <p class="input__error">Can’t be empty</p>
+            </div>
+        </div>
+        <div>
+            <div class="input input_search">
+                <svg class="input__search-icon">
+                    <use href="./static/img/svg/sprite.svg#icon-search" />
+                </svg>
+                <input class="input__text" type="text" placeholder="Search for movies or TV series">
+            </div>
+        </div>
+
+        <div>
+            <h1 class="title title_md">Lorem ipsum dolor sit amet</h1>
+            <h1 class="title title_md title_medium">Lorem ipsum dolor sit amet</h1>
+            <p class="title title_sm">Lorem ipsum dolor sit amet</p>
+            <p class="title title_sm title_medium">Lorem ipsum dolor sit amet</p>
+            <p class="title title_xs">Lorem ipsum dolor sit amet</p>
+            <p class="title title_xs title_medium">Lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+            <p class="text text_xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+        </div>
+
+        <div class="content">
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+        </div>
     </div>
 </div>
 <script src="./static/js/script.min.js"></script>
