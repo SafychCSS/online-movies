@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="logo logo_auth">
+                <svg>
+                    <use href="./static/img/svg/sprite.svg#icon-logo"></use>
+                </svg>
+            </div>
+
+            <div class="auth">
+                <p class="auth__title title title_md">Login</p>
+                <form method="post" class="auth__form">
+                    <div class="input auth__field">
+                        <input class="input__text" name="email" type="text" placeholder="Email address">
+                        <p class="input__error">Can’t be empty</p>
+                    </div>
+                    <div class="input auth__field">
+                        <input class="input__text" name="password" type="password" placeholder="Password">
+                        <p class="input__error">Can’t be empty</p>
+                    </div>
+
+                    <button class="btn auth__submit">Login to your account</button>
+                </form>
+                <p class="auth__question">Don’t have an account? <a href="#">Sign Up</a></p>
+            </div>
+
+            <div class="auth">
+                <p class="auth__title title title_md">Sign Up</p>
+                <form method="post" class="auth__form">
+                    <div class="input auth__field">
+                        <input class="input__text" name="email" type="text" placeholder="Email address">
+                        <p class="input__error">Can’t be empty</p>
+                    </div>
+                    <div class="input auth__field">
+                        <input class="input__text" name="password" type="password" placeholder="Password">
+                        <p class="input__error">Can’t be empty</p>
+                    </div>
+                    <div class="input auth__field">
+                        <input class="input__text" name="password-repeat" type="password" placeholder="Repeat Password">
+                        <p class="input__error">Can’t be empty</p>
+                    </div>
+
+                    <button class="btn auth__submit">Create an account</button>
+                </form>
+                <p class="auth__question">Already have an account? <a href="#">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="./static/js/script.min.js"></script>
+</body>
+</html>
