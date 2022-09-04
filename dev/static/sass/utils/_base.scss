@@ -216,6 +216,14 @@ img {
         }
     }
 
+    &_trend {
+        .movie__info {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+        }
+    }
+
     &__img {
         position: relative;
 
@@ -238,7 +246,6 @@ img {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 12;
 
         display: grid;
         place-content: center;
