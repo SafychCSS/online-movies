@@ -1,5 +1,9 @@
 @import './utils/fonts';
 @import './utils/vars';
 @import './utils/base';
-@import './blocks/auth';
+
+// pages
+@import './pages/auth';
+
+// header
 @import './blocks/header';
