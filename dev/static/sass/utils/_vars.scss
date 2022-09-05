@@ -20,17 +20,15 @@
     --radius-md: 10px;
     --radius-lg: 20px;
 
-    /* max width */
-    --container-md: 1440px;
-    --container-sm: 960px;
-    --container-xs: 600px;
-
     /* padding container */
     --padding-x-md: 32px;
     --padding-x-sm: 24px;
     --padding-x-xs: 16px;
-
-    /* break points */
-    --screen-md: 1365px;
-    --screen-sm: 760px;
 }
+
+$screen-md: 1440px;
+$screen-sm: 760px;
+$screen-xs: 500px;
+
+$container-xs: 500px;
+$container-sm: 900px;

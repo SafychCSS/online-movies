@@ -8,12 +8,432 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        //= blocks/header.html
-        <main class="main">
-            main
-        </main>
-        //= blocks/footer.html
+    <div class="wrapper page">
+        <div class="info-box">
+            <div class="logo">
+                <svg>
+                    <use href="./static/img/svg/sprite.svg#icon-logo"></use>
+                </svg>
+            </div>
+
+            <ul class="menu">
+                <li class="menu__item active">
+                    <a class="menu__link" href="#">
+                        <svg class="menu__icon">
+                            <use href="./static/img/svg/sprite.svg#icon-home"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        <svg class="menu__icon">
+                            <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        <svg class="menu__icon">
+                            <use href="./static/img/svg/sprite.svg#icon-tv"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        <svg class="menu__icon">
+                            <use href="./static/img/svg/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="user">
+                <img class="user__pic" src="./static/img/user.jpg" srcset="./static/img/user.jpg 1x, ./static/img/user@2x.jpg 2x" alt="Alex">
+            </div>
+        </div>
+        <div class="container">
+            <div class="search page__search">
+                <form class="search__form">
+                    <div class="input input_search">
+                        <svg class="input__search-icon">
+                            <use href="./static/img/svg/sprite.svg#icon-search" />
+                        </svg>
+                        <input class="input__text" type="text" placeholder="Search for movies or TV series">
+                    </div>
+                </form>
+            </div>
+            <div class="movie-list page__movie-list">
+                <h2 class="title title_mobile">Trending</h2>
+                <div class="movie-list__container movie-list__container_trending">
+                    <div class="movie movie_trend">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie movie_trend">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie movie_trend">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie movie_trend">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie movie_trend">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-list page__movie-list">
+                <h2 class="title title_mobile">Recommended for you</h2>
+                <div class="movie-list__container">
+                    <div class="movie">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="movie">
+                        <div class="movie__img">
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="./static/img/thumbnails/beyond-earth/trending/large.jpg">
+                                <img src="./static/img/thumbnails/beyond-earth/trending/small.jpg" alt="beyond earth">
+                            </picture>
+                            <div class="movie__overlay">
+                                <div class="movie__play">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-play"></use>
+                                    </svg>
+                                    Play
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__meta">
+                                <p class="movie__year">2019</p>
+                                <p class="movie__category movie__separate">
+                                    <svg>
+                                        <use href="./static/img/svg/sprite.svg#icon-movie"></use>
+                                    </svg>
+                                    Movie
+                                </p>
+                                <p class="movie__mark movie__separate">PG</p>
+                            </div>
+
+                            <p class="movie__title">Beyond Earth</p>
+                        </div>
+
+                        <button class="movie__bookmark">
+                            <svg>
+                                <use href="./static/img/svg/sprite.svg#icon-bookmark-movie"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./static/js/script.min.js"></script>
 </body>

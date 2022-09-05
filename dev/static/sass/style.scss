@@ -2,8 +2,5 @@
 @import './utils/vars';
 @import './utils/base';
 
-// pages
-@import './pages/auth';
-
-// header
 @import './blocks/header';
+@import './blocks/auth';

@@ -23,7 +23,7 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: var(--font-size-md);
     font-weight: 300;
-    line-height: 19px;
+    line-height: 20px;
     color: var(--white);
 
     background-color: var(--blue-dark);
@@ -78,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
     max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .visibility-hidden {
@@ -91,9 +93,29 @@ img {
     clip: rect(0 0 0 0);
 }
 
+.page {
+    &__search {
+        margin: 24px 0;
+    }
+
+    &__movie-list {
+        margin-top: 24px;
+    }
+}
+
 .container {
+    max-width: $container-xs;
+    margin-left: auto;
+    margin-right: auto;
+
     padding-left: var(--padding-x-xs);
     padding-right: var(--padding-x-xs);
+
+    @media (min-width: $screen-sm) {
+        max-width: $container-sm;
+        padding-left: var(--padding-x-sm);
+        padding-right: var(--padding-x-sm);
+    }
 }
 
 .btn {
@@ -139,6 +161,12 @@ img {
     &_medium {
         font-weight: 500;
     }
+
+    &_mobile {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.3125px;
+    }
 }
 
 .text {
@@ -152,6 +180,40 @@ img {
 
 .content p {
     margin: 10px 0 20px;
+}
+
+.movie-list {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 16px;
+
+        &_trending {
+            flex-wrap: nowrap;
+            margin-right: -16px;
+            padding-bottom: 14px;
+            overflow: auto;
+        }
+    }
+
+    @media (min-width: $screen-xs) {
+        &__container {
+            &_trending {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm) {
+        &__container {
+            gap: 30px;
+
+            &_trending {
+                gap: 40px;
+            }
+        }
+    }
 }
 
 .input {
@@ -188,15 +250,11 @@ img {
         height: 24px;
 
         fill: var(--white);
-        transform: translateY(3px);
     }
 
     &_search {
         padding: 0;
-        gap: 24px;
-
-        font-size: 24px;
-        line-height: 30px;
+        gap: 16px;
 
         border-color: transparent;
 
@@ -213,6 +271,7 @@ img {
 .movie {
     position: relative;
     display: inline-block;
+    width: calc(50% - 8px);
 
     &_bookmarked {
         .movie__bookmark {
@@ -223,10 +282,19 @@ img {
     }
 
     &_trend {
+        display: flex;
+        width: 240px;
+        height: 140px;
+        flex-shrink: 0;
+
         .movie__info {
             position: absolute;
-            bottom: 24px;
-            left: 24px;
+            bottom: 16px;
+            left: 16px;
+        }
+
+        .movie__title {
+            font-size: 15px;
         }
     }
 
@@ -398,6 +466,15 @@ img {
             svg {
                 fill: var(--white);
             }
+        }
+    }
+
+    @media (min-width: $screen-sm) {
+        width: calc(33.333% - 20px);
+
+        &_trend {
+            width: 470px;
+            height: 230px;
         }
     }
 }
